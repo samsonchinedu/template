@@ -1,0 +1,6 @@
+export const shoppingCart = `<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.6665 2.1665H3.11651C4.01651 2.1665 4.72484 2.9415 4.64984 3.83317L3.95817 12.1332C3.8415 13.4915 4.9165 14.6582 6.28317 14.6582H15.1582C16.3582 14.6582 17.4082 13.6748 17.4998 12.4832L17.9498 6.23317C18.0498 4.84984 16.9998 3.72483 15.6082 3.72483H4.84984" stroke="#6F7376" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5417 18.8333C14.117 18.8333 14.5833 18.367 14.5833 17.7917C14.5833 17.2164 14.117 16.75 13.5417 16.75C12.9664 16.75 12.5 17.2164 12.5 17.7917C12.5 18.367 12.9664 18.8333 13.5417 18.8333Z" stroke="#6F7376" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.87516 18.8333C7.45046 18.8333 7.91683 18.367 7.91683 17.7917C7.91683 17.2164 7.45046 16.75 6.87516 16.75C6.29987 16.75 5.8335 17.2164 5.8335 17.7917C5.8335 18.367 6.29987 18.8333 6.87516 18.8333Z" stroke="#6F7376" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.5 7.1665H17.5" stroke="#6F7376" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`

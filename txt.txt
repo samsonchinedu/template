@@ -1,0 +1,48 @@
+'use client';
+
+import React, { useActionState, useState } from 'react'
+import CustomInput from '@/component/CustomInput/page'
+import styles from "./sign-up.module.scss"
+import SubmitButton from '@/component/SubmitButton/page'
+import createUser from '@/actions/auth'
+
+const initialState = {
+  message: '',
+}
+
+const SignUpPage = () => {
+  // const [state, formAction] = useActionState(createUser, initialState)
+ const [state, setState] = useState<Function | null>(createUser);
+let message = ""
+
+const handleAction = () => {
+  if(!Error) {
+    message = Error
+  }
+}
+
+
+  return (
+    <div className={styles["sign-up"]}>
+        <form action={createUser}>
+          <CustomInput label="Full name" type="text" placeholder="Enter full name" name="fullname" />
+
+          <CustomInput label="Email" type="text" placeholder="Enter email" name="email" />
+
+          <CustomInput label="Phone number" type="text" placeholder="Enter phone number" name="phone number" />
+
+          <CustomInput label="Password" type="password" placeholder="Enter password" name="password" />
+
+          <CustomInput label="Confirm password" type="password" placeholder="Confirm password" name="confirm password" />
+
+          <p aria-live="polite" className="sr-only">
+            {message}
+          </p>
+          
+          <SubmitButton text="Submit" type="submit" />
+        </form>
+    </div>
+  )
+}
+
+export default SignUpPage

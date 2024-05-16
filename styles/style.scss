@@ -1,0 +1,8 @@
+// theme
+@import "./theme/function";
+@import "./theme/mixin";
+@import "./theme/variable";
+
+.body{
+    font-family: $font-manrope;
+}
