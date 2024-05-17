@@ -9,7 +9,7 @@
   color: #6f7376;
   margin-top: 1rem;
   border-radius: 5px;
-  margin-left: 1rem;
+  margin-inline: 1rem;
   text-decoration: none;
 
   .sidebar-nav-link {
@@ -47,6 +47,10 @@
       // color: #000;
       text-transform: capitalize;
     }
+  }
+
+  &:hover{
+    background: #f2f3f3;
   }
 }
 
