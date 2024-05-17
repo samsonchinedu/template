@@ -1,7 +1,45 @@
-h1{
-    font-weight: 700;
-    font-size: 28px;
-    text-align: right;
-    line-height: 38.25px;
-    color: hsl(0, 0%, 10%);
+@import "../../styles/theme/variable";
+
+.header{
+    margin-top: 2rem;
+    display: flex;
+    padding-right: 3rem;
+    align-items: center;
+    font-family: $font-manrope;
+    justify-content: space-between;
+
+    &-left{
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32.78px;
+        }
+
+        small{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 23.8px;
+            color: #6f7376;
+        }
+    }
+
+    &-right{
+        gap: 4px;
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        background: #FF9B12;
+        justify-content: center;
+        padding: 9.5px 27px 9.5px 27px;
+
+        button{
+            border: none;
+            outline: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 21px;
+            background: transparent;
+        }
+    }
 }
