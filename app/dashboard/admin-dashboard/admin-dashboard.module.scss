@@ -1,7 +1,17 @@
 .admin-dashboard{
-    width: 100%;
+    width: 81%;
+    margin-left: 18rem;
 
     &-right{
+        margin-top: 7rem;
         margin-left: 4rem;
+        margin-right: 3.2rem;
+
+        &-cards{
+            display: flex;
+            margin-top: 1.5rem;
+            align-items: center;
+            justify-content: space-between;
+        } 
     }
 }

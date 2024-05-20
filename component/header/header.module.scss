@@ -3,7 +3,6 @@
 .header{
     margin-top: 2rem;
     display: flex;
-    padding-right: 3rem;
     align-items: center;
     font-family: $font-manrope;
     justify-content: space-between;
@@ -42,4 +41,8 @@
             background: transparent;
         }
     }
+}
+
+.mt-4rem{
+    margin-top: 5rem;
 }
