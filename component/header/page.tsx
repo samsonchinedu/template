@@ -3,10 +3,10 @@ import styles from './header.module.scss'
 import Icon from '../Icon/page'
 import { icons } from '@/utils/icon'
 
-const Header = ({ text, small, btnText, icon, active } : any) => {
+const Header = ({ text, small, btnText, icon, active, marginTop } : any) => {
 
   return (
-    <div className={styles["header"]}>
+    <div className={`${styles["header"]} ${styles[marginTop]}`}>
         <div className={styles["header-left"]}>
             <h3>{text}</h3>
             <small>{small}</small>
