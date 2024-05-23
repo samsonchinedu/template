@@ -21,7 +21,8 @@ const AdminDashboard = () => {
           text="Manage a Property" 
           small="Manage a Listed Property" 
           btnText="Add New Property" 
-          icon="plus" 
+          icon="plus"
+          right="right"
           active="isActive"
         />
         <div className={styles["admin-dashboard-right-cards"]}>

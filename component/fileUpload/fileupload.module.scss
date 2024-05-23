@@ -1,0 +1,124 @@
+
+
+
+.files{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-file-btn{
+        gap: 10px;
+        width: 642px;
+        height: 133px;
+        display: flex;
+        margin-block: 1rem;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1px dashed #E6E5E5;
+
+        &-icon{
+            display: flex;
+        }
+
+        h4{
+            font-size: 12px;
+            font-weight: 400;
+            color: #a3a3a3;
+            line-height: 19px;
+            letter-spacing: 0.2px;
+
+            .text{
+                color: #ff9b12;
+            }
+        }
+    }
+
+    &-file-card{
+        width: 100%;
+        height: 97px;
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        background: #fbfbfb;
+        border: .5px solid #f3f3f3;
+
+        &-top{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &-left{
+                gap: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &-imageIcon{
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    border-radius: 50%;
+                    align-items: center;
+                    background: #ffffff;
+                    justify-content: center;
+                    border: 0.6px solid #eaeaeae0;
+                    box-shadow: 0px 2px 10px 0px #3F515E0A;
+                }
+
+                h4{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    color: #4b4d4e;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            &-right{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                button{
+                    outline: none;
+                    border: none;
+                    background: transparent;
+
+                    .icon{
+                        font-size: 30px;
+                        color: #858585;
+                    }
+
+                }
+
+                &-check{
+                    
+                    &-percent{
+                        font-size: 12px;
+                    }
+
+                    &-item{
+                        font-size: 30px;
+                        color: #FF9B12;
+                    }
+                }
+            }
+        }
+
+
+        &-progress-bg{
+            width: 100%;
+            height: 6px;
+            margin-top: 1rem;
+            border-radius: 10px;
+            background: #fff;
+
+            &-progress{
+                border-radius: 10px;
+                background: #ff9b12;
+            }
+        }
+    }
+}

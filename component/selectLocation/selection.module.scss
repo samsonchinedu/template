@@ -1,0 +1,45 @@
+
+
+.select-container{
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-select{
+        width: 201px;
+        height: 55px;
+        display: flex;
+        color: #9b9b9b;
+        position: relative;
+        align-items: center;
+        border-radius: 44px;
+        justify-content: center;
+        background: #cecece1a;
+        border: 1px solid #cecece;
+        padding: 16px 20px 16px 32px;
+        
+        // add a custom select arrrow
+        
+        &:focus-visible{
+            outline: none;
+            border: 1px solid #cecece;
+        }
+    }
+
+    &-select::before{
+        content: "";
+        top: 50%;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: #fffeee;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url("../../public/image/chevronDownArrow.svg");
+    }
+}

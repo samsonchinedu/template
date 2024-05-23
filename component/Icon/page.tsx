@@ -2,6 +2,7 @@ import SVG from "react-inlinesvg";
 import styles from "./icon.module.scss";
 
 import { IconType, icons } from "@/utils/icon";
+
 interface IconProps {
   icon: IconType;
   width?: number;
