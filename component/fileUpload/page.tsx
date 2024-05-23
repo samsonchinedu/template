@@ -5,7 +5,7 @@ import styles from './fileupload.module.scss'
 import { IoIosClose, IoIosCheckmark } from "react-icons/io";
 
 const FileUplaod: React.FC = () => {
-    const inputRef = useRef<HTMLInputElement>("");
+    const inputRef = useRef<HTMLInputElement>(null);
 
     const [selectedFile, setSelectedFile] = useState(null);
     const [progress, setProgress] = useState(0);
@@ -18,11 +18,15 @@ const FileUplaod: React.FC = () => {
     };
 
     const onChooseFile = () => {
-        inputRef.current.click()
+        if (inputRef.current) {
+            inputRef.current.click();
+          }
     }
 
     const clearFileInput = () => {
-        inputRef.current.value = "";
+        if (inputRef.current) {
+            inputRef.current.value = "";
+          }
         setProgress(0);
         setUploadStatus("select");
       };
