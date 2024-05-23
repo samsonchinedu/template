@@ -1,0 +1,96 @@
+.list-property{
+    width: 81%;
+    margin-left: 18rem;
+    padding-bottom: 4rem;
+
+    &-details{
+        margin-top: 7rem;
+        margin-left: 4rem;
+        margin-right: 3.2rem;
+
+        &-form{
+            margin-top: 1.5rem;
+
+            &-input{
+                gap: 8px;
+                width: 694px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                & + & {
+                    margin-top: 2rem;
+                }
+                
+                &-select{
+                    width: 100%;
+                    height: 54px;
+                    color: #9b9b9b;
+                    border-radius: 44px;
+                    padding: 16px 20px 16px 32px;
+                    border: 1px solid #ecececf3;
+                    background-color: rgba(236, 236, 236, 0.1);
+
+                    &:focus-visible{
+                        outline: none;
+                        border: 1px solid #cecece;
+                    }
+                }
+            }
+            &-inputs{
+                gap: 8px;
+                width: 694px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                
+                
+                    margin-top: 2rem;
+                
+                &-select{
+                    width: 100%;
+                    height: 54px;
+                    color: #9b9b9b;
+                    border-radius: 44px;
+                    padding: 16px 20px 16px 32px;
+                    border: 1px solid #ecececf3;
+                    background-color: rgba(236, 236, 236, 0.1);
+
+                    &:focus-visible{
+                        outline: none;
+                        border: 1px solid #cecece;
+                    }
+                }
+            }
+
+            &-file{
+                width: 694px;
+                height: 330px;
+                margin-top: 2rem;
+                padding: 1rem 2rem;
+                border-radius: 8px;
+                border: 1px solid #cecece;
+            }
+
+            .btn-submit{
+                width: 694px;
+                height: 55px;
+                border: none;
+                outline: none;
+                color: #fff;
+                margin-top: 2rem;
+                border-radius: 40px;
+                background: #FF9B12;
+                
+                // font style
+
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+            }
+        }
+    }
+}

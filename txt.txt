@@ -46,3 +46,37 @@ const handleAction = () => {
 }
 
 export default SignUpPage
+
+{
+  "countries": [
+      {
+          "states": [
+              {
+                  "lga": [
+                      "Mushin",
+                      "Ikaje",
+                      "Alimosho"
+                  ], 
+                  "stateName": "Lagos"
+              },
+              {
+                  "lga": [
+                      "Mushin",
+                      "Ikaje",
+                      "Alimosho"
+                  ], 
+                  "stateName": "Abuja"
+              },
+              {
+                  "lga": [
+                      "Mushin",
+                      "Ikaje",
+                      "Alimosho"
+                  ], 
+                  "stateName": "Port Harcourt"
+              }
+          ],
+          "countryName": "Nigeria"
+      }
+  ]
+}

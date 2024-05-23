@@ -30,6 +30,8 @@ import { verticalFrame } from "@/public/AdminImage/verticalFrame";
 import { wallet } from "@/public/AdminImage/wallet";
 import { warning } from "@/public/AdminImage/warning";
 import { plus } from "@/public/AdminImage/plus";
+import { videoPlay } from "@/public/AdminImage/videoPlay";
+import { orangeplus } from "@/public/AdminImage/orangePlus";
 
 
 
@@ -66,6 +68,8 @@ export type IconType =
 | "wallet"
 | "warning"
 | "plus"
+| "video"
+| "orangePlus"
 
 export const icons: Record<IconType, string> = {
     category: category,
@@ -99,5 +103,7 @@ export const icons: Record<IconType, string> = {
     verticalFrame: verticalFrame,
     wallet: wallet,
     warning: warning,
-    plus: plus
+    plus: plus,
+    video: videoPlay,
+    orangePlus: orangeplus
 }
