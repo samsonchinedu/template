@@ -7,7 +7,7 @@ import { IoIosClose, IoIosCheckmark } from "react-icons/io";
 const FileUplaod: React.FC = () => {
     const inputRef = useRef<HTMLInputElement>(null);
 
-    const [selectedFile, setSelectedFile] = useState(null);
+    const [selectedFile, setSelectedFile] = useState<File | null>(null);
     const [progress, setProgress] = useState(0);
     const [uploadStatus, setUploadStatus] = useState("select");
 
@@ -41,7 +41,7 @@ const FileUplaod: React.FC = () => {
           setUploadStatus("uploading");
 
           const formData = new FormData();
-          formData.append("file", selectedFile);
+        //   formData.append("file", select);
 
               const onUploadProgress = (progressEvent: any) => {
                 const percentCompleted = Math.round(
@@ -89,7 +89,7 @@ const FileUplaod: React.FC = () => {
                                     icon="vector" 
                                 />
                             </div>
-                            <h6>{selectedFile?.name} Property Image.png</h6>
+                            <h6> Property Image.png</h6>
                         </div>
                         <div className={styles["files-file-card-top-right"]}>
                             {uploadStatus === "select" ? (
