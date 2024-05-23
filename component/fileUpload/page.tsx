@@ -4,8 +4,8 @@ import Input from '../input/page';
 import styles from './fileupload.module.scss'
 import { IoIosClose, IoIosCheckmark } from "react-icons/io";
 
-const FileUplaod = () => {
-    const inputRef = useRef();
+const FileUplaod: React.FC = () => {
+    const inputRef = useRef<HTMLInputElement>("");
 
     const [selectedFile, setSelectedFile] = useState(null);
     const [progress, setProgress] = useState(0);
@@ -37,7 +37,7 @@ const FileUplaod = () => {
           setUploadStatus("uploading");
 
           const formData = new FormData();
-          formData.append("file", selectedFile || null);
+          formData.append("file", selectedFile);
 
               const onUploadProgress = (progressEvent: any) => {
                 const percentCompleted = Math.round(
