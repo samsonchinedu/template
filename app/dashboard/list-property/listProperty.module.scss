@@ -75,6 +75,28 @@
                 justify-content: flex-start;
             }
 
+            &-checks{
+                gap: 2rem;
+                display: flex;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+
+                &-flex-checkbox{
+                    gap: 1.5rem;
+                    display: flex;
+                    align-items: center;
+
+                    &-input{
+                        gap: 8px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
             &-file{
                 width: 694px;
                 height: 330px;

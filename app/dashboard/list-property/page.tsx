@@ -35,6 +35,7 @@ const ListProperty = () => {
                     <Label text="Property Name" />
                     <Input
                         type="text"
+                        input="input"
                         placeholder="Enter name of Property"  
                     />
                 </div>
@@ -42,6 +43,7 @@ const ListProperty = () => {
                     <Label text="Property Description" />
                     <Input
                         type="text"
+                        input="input"
                         placeholder="Describe the property"  
                     />
                 </div>
@@ -53,6 +55,7 @@ const ListProperty = () => {
                     <Label text="Address" />
                     <Input
                         type="text"
+                        input="input"
                         placeholder="Enter Your Address"  
                     />
                 </div>
@@ -60,6 +63,7 @@ const ListProperty = () => {
                     <Label text="Coodinates(Long/Lat)" />
                     <Input
                         type="text"
+                        input="input"
                         placeholder="Enter the Coodinates"  
                     />
                 </div>
@@ -67,6 +71,7 @@ const ListProperty = () => {
                     <Label text="Cost of Property" />
                     <Input
                         type="text"
+                        input="input"
                         placeholder="Enter the price of Property"  
                     />
                 </div>
@@ -103,6 +108,7 @@ const ListProperty = () => {
                     <Label text="Add YouTube Link to Property Video" />
                     <Input
                         type="text"
+                        input="input"
                         placeholder=" https://youtu.be/rVlhMGQgDkY"  
                     />
                 </div>
@@ -127,11 +133,73 @@ const ListProperty = () => {
                     active="isActive"
                 />
 
+                <div  className={styles["list-property-details-form-checks"]}>
+                    <div className={styles["list-property-details-form-checks-flex-checkbox"]}>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Parking Spaces" confirm="confirm" />
+                        </div>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Parking Spaces" confirm="confirm" />
+                        </div>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Parking Spaces" confirm="confirm" />
+                        </div>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Parking Spaces" confirm="confirm" />
+                        </div>
+                    </div>
+                    <div className={styles["list-property-details-form-checks-flex-checkbox"]}>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Cinema Hall" confirm="confirm" />
+                        </div>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Cinema Hall" confirm="confirm" />
+                        </div>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Cinema Hall" confirm="confirm" />
+                        </div>
+                        <div className={styles["list-property-details-form-checks-flex-checkbox-input"]}>
+                            <Input
+                                type="checkbox"
+                                checkbox="checkbox" 
+                            />
+                            <Label text="Cinema Hall" confirm="confirm" />
+                        </div>
+                    </div>
+                </div>
+
                 <div className={styles["list-property-details-form-inputd"]}>
                     <Input
                         type="checkbox"
-                        checkbox="checkbox"
-                        placeholder="Enter the price of Property"  
+                        checkbox="checkbox" 
                     />
                     <Label text="I Confirm that I uploaded valid  Property Details" confirm="confirm" />
                 </div>
