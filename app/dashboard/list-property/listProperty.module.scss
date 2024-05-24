@@ -66,6 +66,15 @@
                 }
             }
 
+            &-inputd{
+                gap: 8px;
+                width: 694px;
+                display: flex;
+                margin-top: 2rem;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
             &-file{
                 width: 694px;
                 height: 330px;

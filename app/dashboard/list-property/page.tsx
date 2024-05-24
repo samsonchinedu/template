@@ -127,6 +127,15 @@ const ListProperty = () => {
                     active="isActive"
                 />
 
+                <div className={styles["list-property-details-form-inputd"]}>
+                    <Input
+                        type="checkbox"
+                        checkbox="checkbox"
+                        placeholder="Enter the price of Property"  
+                    />
+                    <Label text="I Confirm that I uploaded valid  Property Details" confirm="confirm" />
+                </div>
+
                 <button className={styles["btn-submit"]} type='submit'>
                     Submit
                 </button>
