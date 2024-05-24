@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './label.module.scss'
 
-const Label = ({text, option} : any) => {
+const Label = ({text, option, confirm} : any) => {
   return (
-    <label htmlFor={option} className={styles['label']}>{text}</label>
+    <label htmlFor={option} className={styles[`label-${confirm}`]}>{text}</label>
   )
 }
 
