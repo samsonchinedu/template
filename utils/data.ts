@@ -1,4 +1,4 @@
-{
+export const location : any = {
     "Nigeria": {
       "Lagos": ["Ikeja", "Mushin", "Alimosho"],
       "Abuja": ["Abaji", "Bwari", "Kuje", "Kwali"],

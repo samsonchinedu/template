@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import location from '@/utils/data.json';
+import { location } from '@/utils/data';
 import styles from "./selection.module.scss";
 import { FaChevronDown } from "react-icons/fa";
 
