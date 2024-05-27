@@ -3,7 +3,8 @@ import styles from "./admin-card.module.scss"
 import Image from 'next/image'
 import Icon from '../Icon/page'
 
-const AdminCard = ({ src, name, typeColor, title, text, icon, iconEdit, iconTrash, iconLocal, typeText } : any) => {
+const AdminCard = ({ src, name, typeColor, title, text, icon, iconEdit, iconTrash, iconLocal, typeText, onClick } : any) => {
+
 
     const className = typeText === "Activated" ? "none" : ""; 
   return (
@@ -16,7 +17,7 @@ const AdminCard = ({ src, name, typeColor, title, text, icon, iconEdit, iconTras
                     <small>{typeText}</small>
                 </div>
                 <div className={styles["card-top-tag-like"]} style={{display: className}}>
-                    <Icon icon={icon} />
+                    <Icon icon={icon} width={12} height={12} />
                 </div>
             </div>
         </div>
@@ -25,12 +26,16 @@ const AdminCard = ({ src, name, typeColor, title, text, icon, iconEdit, iconTras
                 <p>{title}</p>
                 <div className={styles["card-bottom-detail-location"]}>
                     <div className={styles["card-bottom-detail-location-local"]}>
-                        <Icon icon={iconLocal} />
+                        <Icon icon={iconLocal} width={16} height={16} />
                         <small>{text}</small>
                     </div>
                     <div className={styles["card-bottom-detail-location-mutate"]}>
-                        <Icon icon={iconEdit} />
-                        <Icon icon={iconTrash} />
+                        <div>
+                            <Icon icon={iconEdit} width={20} height={20} />
+                        </div>
+                        <div onClick={onClick}>
+                            <Icon icon={iconTrash} width={20} height={20} />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -10,8 +10,10 @@ import Estate from "@/public/image/estate.png"
 import Jerome from "@/public/image/jerome-woman.png"
 import John from "@/public/image/john-man.png"
 import Savannah from "@/public/image/savannah-man.png"
+import { useRouter } from 'next/navigation'
 
 const AdminDashboard = () => {
+  // const router = useRouter();
   return (
     <div className={styles["admin-dashboard"]}>
       <Navbar icon="arrow" icons="notification" defaultImage="vector" />
@@ -66,8 +68,9 @@ const AdminDashboard = () => {
         
         <Header 
           active="isActive"
+          right="approve"
           marginTop="mt-4rem"
-          text="Manage a Agent" 
+          text="Manage a Agent"
           small="Manage a Listed Agency" 
           btnText="View Pending Approval" 
         />
