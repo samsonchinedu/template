@@ -51,10 +51,10 @@ const SortProperty = () => {
             <small>1-30 of 200</small>
             <div  className={styles["sort-property-paganation-icons"]}>
                 <div  className={styles["sort-property-paganation-icons-icon"]}>
-                <Icon icon='arrowLeft' width={10} handle={10} />
+                <Icon icon='arrowLeft' width={10} height={10} />
                 </div>
                 <div  className={styles["sort-property-paganation-icons-icon"]}>
-                    <Icon icon='arrowRight' width={10} handle={10} />
+                    <Icon icon='arrowRight' width={10} height={10} />
                 </div>
             </div>
         </div>
