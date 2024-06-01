@@ -8,9 +8,12 @@
   display: flex;
   color: #6f7376;
   margin-top: 1rem;
+  padding-right: .5rem;
   border-radius: 5px;
+  align-items: center;
   margin-inline: 1rem;
   text-decoration: none;
+  justify-content: space-between;
 
   .sidebar-nav-link {
     display: flex;
@@ -28,35 +31,27 @@
         width: 100%;
         height: 100%;
       }
-      // & svg path {
-        // fill: #000;
-        // fill: #fff;
-
-        // &:hover {
-        //   fill: $col-primary;
-        // }
-      // }
     }
     &-text {
       margin-left: toRem(18px);
-    //   @include menu-txt;
       cursor: pointer;
-      // opacity: .8;
       font-size: 1rem;
-      // color: $col-white;
-      // color: #000;
       text-transform: capitalize;
     }
+  }
+  
+  &-icon{
+    font-size: 10px;
+    color: #6F7376;
   }
 
   &:hover{
     background: #f2f3f3;
   }
+
 }
 
-// .link:nth-child(1){
-//   margin-top: 2rem;
-// }
+
 
 .active{
   color: #FF9B12;
@@ -68,3 +63,4 @@
     border: 1px solid #FF9B12;
   }
 }
+
