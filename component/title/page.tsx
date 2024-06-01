@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Title = ({text} : any) => {
+const Title = ({text, top} : any) => {
   return (
-    <div>
+    <div style={{marginTop: top}}>
         <h1>{text}</h1>
     </div>
   )

@@ -3,7 +3,7 @@ import styles from "./admin-card.module.scss"
 import Image from 'next/image'
 import Icon from '../Icon/page'
 
-const AdminCard = ({ src, name, typeColor, title, text, icon, iconEdit, iconTrash, iconLocal, typeText, onClick } : any) => {
+const AdminCard = ({ src, typeColor, title, text, icon, iconEdit, iconTrash, iconLocal, typeText, onClick } : any) => {
 
 
     const className = typeText === "Activated" ? "none" : ""; 
@@ -27,7 +27,7 @@ const AdminCard = ({ src, name, typeColor, title, text, icon, iconEdit, iconTras
                 <div className={styles["card-bottom-detail-location"]}>
                     <div className={styles["card-bottom-detail-location-local"]}>
                         <Icon icon={iconLocal} width={16} height={16} />
-                        <small>{text}</small>
+                        <small>ID: {text}</small>
                     </div>
                     <div className={styles["card-bottom-detail-location-mutate"]}>
                         <div>

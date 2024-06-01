@@ -3,10 +3,11 @@
 import React, { useState } from 'react'
 import styles from "./sortProperty.module.scss"
 import Icon from '../Icon/page'
+import DateRange from '../dateRange/page'
 
 
 
-const SortProperty = () => {
+const SortProperty = ({range} : any) => {
 
     const [sort, setSort] = useState(false);
     const [textInput, setTextInput] = useState('All');
@@ -42,6 +43,7 @@ const SortProperty = () => {
                 </ul>
                 <Icon icon='sort' width={16} height={16} />
             </div>
+            { range &&  <DateRange /> }
             <div className={styles["sort-property-items-search"]}>
                 <Icon icon='search' width={20} height={20} />
                 <input type="text" placeholder='Search' className={styles["sort-property-items-search-input"]} />

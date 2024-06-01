@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import styles from "./admin-dashboard.module.scss"
 import Title from '@/component/title/page'
@@ -13,7 +15,11 @@ import Savannah from "@/public/image/savannah-man.png"
 import { useRouter } from 'next/navigation'
 
 const AdminDashboard = () => {
-  // const router = useRouter();
+  const router = useRouter();
+  const push = () => {
+    router.push("list-property")
+  }
+
   return (
     <div className={styles["admin-dashboard"]}>
       <Navbar icon="arrow" icons="notification" defaultImage="vector" />
@@ -26,6 +32,7 @@ const AdminDashboard = () => {
           icon="plus"
           right="right"
           active="isActive"
+          onClack={push}
         />
         <div className={styles["admin-dashboard-right-cards"]}>
           <AdminCard 

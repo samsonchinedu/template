@@ -1,0 +1,96 @@
+.table{
+    width: 100%;
+
+    &-thead{
+        gap: 4rem;
+        height: 48px;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        background: #f7f8f8;
+        // justify-content: space-between;
+        padding: 13px 0px 13px 42px;
+
+        li{
+            font-size: 14px;
+            font-weight: 500;
+            color: #5E6164;
+            // margin-right: 6rem;
+            line-height: 22.4px;
+        }
+    }
+
+    &-listedOrder{
+        display: flex;
+        flex-direction: column;
+
+        &-list{
+            // gap: 6rem;
+            height: 48px;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            // justify-content: space-between;
+            padding: 13px 10px 13px 42px;
+
+            li{
+                font-size: 14px;
+                font-weight: 500;
+                color: #5E6164;
+                // margin-right: 6rem;
+                line-height: 22.4px;
+            }
+
+            &-successful{
+                gap: 8px;
+                display: flex;
+                color: #3FB827;
+                align-items: center;
+                justify-content: center;
+
+                div{
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background: #3fb827;
+                }
+            }
+
+            li:nth-child(2) {
+                margin-left: 4rem;
+            }
+
+            li:nth-child(3) {
+                margin-left: 5.5rem;
+            }
+
+            li:nth-child(4) {
+                margin-left: 8rem;
+            }
+
+            li:nth-child(5) {
+                margin-left: 4rem;
+                gap: 8px;
+                display: flex;
+                color: #3FB827;
+                align-items: center;
+                justify-content: center;
+
+                div{
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background: #3fb827;
+                }
+            }
+
+            li:nth-child(6) {
+                margin-left: 4rem;
+            }
+
+            &:nth-child(even) {
+                background: #f7f8f8;
+            }
+        }
+    }
+}
