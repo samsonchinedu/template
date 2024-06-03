@@ -1,4 +1,7 @@
-export const verticalFrame = `<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 2H2V16L11.2923 6.70649C11.6828 6.31595 12.3159 6.31591 12.7065 6.70641L18 12.0104V2ZM0 0.9934C0 0.44476 0.45531 0 0.9918 0H19.0082C19.556 0 20 0.44495 20 0.9934V17.0066C20 17.5552 19.5447 18 19.0082 18H0.9918C0.44405 18 0 17.5551 0 17.0066V0.9934ZM6 8C4.89543 8 4 7.1046 4 6C4 4.89543 4.89543 4 6 4C7.10457 4 8 4.89543 8 6C8 7.1046 7.10457 8 6 8Z" fill="#858585"/>
+export const verticalFrame = `<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.4125" y="20.0875" width="19.175" height="19.175" rx="9.5875" transform="rotate(-90 0.4125 20.0875)" stroke="#1A1A1A" stroke-width="0.825"/>
+<circle cx="10.0003" cy="14.6623" r="0.891892" transform="rotate(-90 10.0003 14.6623)" fill="#1A1A1A"/>
+<circle cx="10.0003" cy="10.4997" r="0.891892" transform="rotate(-90 10.0003 10.4997)" fill="#1A1A1A"/>
+<circle cx="10.0003" cy="6.3376" r="0.891892" transform="rotate(-90 10.0003 6.3376)" fill="#1A1A1A"/>
 </svg>
 `

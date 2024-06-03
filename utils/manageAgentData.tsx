@@ -122,3 +122,54 @@ export const agentProf = [
         statusClass: "successful"
     },
 ]
+
+export const customer = [
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+    {
+        name: 'Ramson Richard',
+        dob: "12-02-1990",
+        phone: "+234 5935 3943 549",
+        idnum: "32456757824"
+    },
+]

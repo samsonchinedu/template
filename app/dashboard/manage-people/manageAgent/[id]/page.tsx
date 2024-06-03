@@ -9,6 +9,11 @@ import Header from '@/component/header/page'
 import Title from '@/component/title/page'
 import AreaChartComponent from '@/component/areaChart/page'
 import TableComponent from '@/component/table/page'
+import Chart from '@/component/areaChartVisx/page'
+import styled from "styled-components";
+import { QueryClientProvider, QueryClient } from "react-query";
+
+const queryClient = new QueryClient();
 
 interface Agent {
   id: string;
@@ -21,16 +26,35 @@ interface Agent {
   earning: string;
 }
 
+const Background = styled.div`
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+`;
+
+const Container = styled.div`
+  position: relative;
+  background-color: #80FF0014;
+  width: 100%;
+  height: 400px;
+  border-radius: 40px;
+  overflow: hidden;
+`;
+
 const ManageAgentID = ({ params }: { params: { id: string } }) => {
-  const [agents, setAgents] = useState<Agent| null>(null);
+  const [agents, setAgents] = useState<Agent | null>(null);
 
   useEffect(() => {
     const selected = agent.find((item) => item.id === params.id)
     console.log(selected);
 
-    if(selected) {
+    if (selected) {
       setAgents(selected)
-    } else{
+    } else {
       setAgents(null)
     }
 
@@ -47,9 +71,9 @@ const ManageAgentID = ({ params }: { params: { id: string } }) => {
           small="View all agents and perform various actions"
         />
         <div className={styles["manage-agent-right-agentpro"]}>
-          <AdminCard 
+          <AdminCard
             src={agents?.thumbnail}
-            typeText="Activated" 
+            typeText="Activated"
             typeColor="green"
             iconTrash="frame"
             title={agents?.name}
@@ -96,7 +120,14 @@ const ManageAgentID = ({ params }: { params: { id: string } }) => {
             <h2>91.54%</h2>
           </div>
           <div>
-            <AreaChartComponent />
+            {/* <AreaChartComponent /> */}
+            <QueryClientProvider client={queryClient}>
+              <Background>
+                <Container>
+                  <Chart />
+                </Container>
+              </Background>
+            </QueryClientProvider>
           </div>
         </div>
       </div>
