@@ -1,0 +1,75 @@
+.credit{
+    gap: 10px;
+    width: 401px;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    box-shadow: 0px 6px 16px 0px #4d4d4d14;
+
+    top: 1rem;
+    right: -2rem;
+    position: absolute;
+
+    &-top{
+        gap: 4rem;
+        display: flex;
+        padding: 1rem 0;
+        align-items: center;
+        padding-right: 1.5rem;
+        justify-content: flex-end;
+        border-bottom: 1px solid #eff0f0;
+
+        small{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 0.2px;
+        }
+
+        &-icon{
+            width: 25px;
+            height: 25px;
+
+            font-size: 16px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            color: #313435;
+            background: #eff0f0;
+        }
+    }
+
+    &-bottom{
+        gap: 2rem;
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+
+        &-inputs{
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-input{
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.none{
+    display: none;
+}

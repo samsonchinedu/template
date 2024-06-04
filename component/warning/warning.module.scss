@@ -1,0 +1,18 @@
+
+
+.warning{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background: #07080873;
+    justify-content: center;
+}
+
+.d-none{
+    display: none;
+}

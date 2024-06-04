@@ -3,7 +3,8 @@ import styles from './header.module.scss'
 import Icon from '../Icon/page'
 import { icons } from '@/utils/icon'
 
-const Header = ({ text, small, btnText, icon, active, marginTop, right } : any) => {
+const Header = ({ text, small, btnText, icon, active, onClack, right } : any) => {
+  
 
   return (
     <div className={`${styles["header"]} ${styles[text]}`}>
@@ -11,7 +12,7 @@ const Header = ({ text, small, btnText, icon, active, marginTop, right } : any) 
             <h3>{text}</h3>
             <small>{small}</small>
         </div>
-        <div className={`${styles[`header-${right}`]} ${!active ? styles["header-disable"] : ""}`}>
+        <div className={`${styles[`header-${right}`]} ${!active ? styles["header-disable"] : ""}`} onClick={onClack}>
             <Icon icon={icon} width={20} height={20} />
             <button>{btnText}</button>
         </div>

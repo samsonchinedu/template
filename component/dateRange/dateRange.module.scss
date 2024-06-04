@@ -1,0 +1,29 @@
+.calendarWrap {
+    
+    position: relative;
+    display: inline-block;
+
+    &-input{
+        gap: 25px;
+        width: 146px;
+        height: 36px;
+        display: flex;
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E5E6E6;
+    }
+
+    &-container {
+
+        &-calendarElement {
+            left: 50%;
+            top: 45px;
+            z-index: 999;
+            border-radius: 6px;
+            position: absolute;
+            outline: 1px solid #ccc;
+            transform: translateX(-50%);
+          }
+      }
+  }

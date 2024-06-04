@@ -1,0 +1,29 @@
+.manage-people{
+    width: 81%;
+    margin-left: 18rem;
+
+    &-right{
+        margin-top: 7rem;
+        margin-left: 4rem;
+        margin-right: 3.2rem;
+
+        &-cards{
+            gap: 4rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-link{
+                color: #1a1a1a;
+                text-decoration: none;
+            }
+
+            & + & {
+                margin-top: 3rem;
+            }
+        } 
+    }
+}

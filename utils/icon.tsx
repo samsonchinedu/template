@@ -32,6 +32,8 @@ import { warning } from "@/public/AdminImage/warning";
 import { plus } from "@/public/AdminImage/plus";
 import { videoPlay } from "@/public/AdminImage/videoPlay";
 import { orangeplus } from "@/public/AdminImage/orangePlus";
+import { naira } from "@/public/AdminImage/naira";
+import { trash2 } from "@/public/AdminImage/trash2";
 
 
 
@@ -70,6 +72,8 @@ export type IconType =
 | "plus"
 | "video"
 | "orangePlus"
+| "naira"
+| "trash2"
 
 export const icons: Record<IconType, string> = {
     category: category,
@@ -105,5 +109,7 @@ export const icons: Record<IconType, string> = {
     warning: warning,
     plus: plus,
     video: videoPlay,
-    orangePlus: orangeplus
+    orangePlus: orangeplus,
+    naira: naira,
+    trash2: trash2,
 }

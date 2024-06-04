@@ -2,6 +2,7 @@ import SVG from "react-inlinesvg";
 import styles from "./icon.module.scss";
 
 import { IconType, icons } from "@/utils/icon";
+import { MouseEventHandler } from "react";
 
 interface IconProps {
   icon: IconType;
@@ -10,7 +11,12 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ icon, width, height }) => {
-  return <SVG src={icons[icon]} width={width} height={height} className={styles.icon}/>;
+  return <SVG 
+            src={icons[icon]} 
+            width={width} 
+            height={height} 
+            className={styles.icon}
+        />;
 };
 
 export default Icon;

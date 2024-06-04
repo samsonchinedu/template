@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import styles from "./admin-dashboard.module.scss"
 import Title from '@/component/title/page'
@@ -10,8 +12,14 @@ import Estate from "@/public/image/estate.png"
 import Jerome from "@/public/image/jerome-woman.png"
 import John from "@/public/image/john-man.png"
 import Savannah from "@/public/image/savannah-man.png"
+import { useRouter } from 'next/navigation'
 
 const AdminDashboard = () => {
+  const router = useRouter();
+  const push = () => {
+    router.push("list-property")
+  }
+
   return (
     <div className={styles["admin-dashboard"]}>
       <Navbar icon="arrow" icons="notification" defaultImage="vector" />
@@ -24,6 +32,7 @@ const AdminDashboard = () => {
           icon="plus"
           right="right"
           active="isActive"
+          onClack={push}
         />
         <div className={styles["admin-dashboard-right-cards"]}>
           <AdminCard 
@@ -66,8 +75,9 @@ const AdminDashboard = () => {
         
         <Header 
           active="isActive"
+          right="approve"
           marginTop="mt-4rem"
-          text="Manage a Agent" 
+          text="Manage a Agent"
           small="Manage a Listed Agency" 
           btnText="View Pending Approval" 
         />
