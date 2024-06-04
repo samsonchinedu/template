@@ -3,7 +3,9 @@ import styles from './tablecustomer.module.scss'
 import { customer } from '@/utils/manageAgentData'
 import Icon from '../Icon/page'
 
-const TableCustomerComponent = () => {
+const TableCustomerComponent = ({onClick} : any) => {
+    // console.log(onClick);
+    
   return (
     <div className={styles["table"]}>
         <ul className={styles["table-thead"]}>
@@ -19,7 +21,7 @@ const TableCustomerComponent = () => {
                     <li>{referral.dob}</li>
                     <li>{referral.phone}</li>
                     <li>{referral.idnum} (NIN)</li>
-                    <li>
+                    <li onClick={onClick}>
                         <Icon icon="verticalFrame" width={20} height={20} />
                     </li>
                 </ul>

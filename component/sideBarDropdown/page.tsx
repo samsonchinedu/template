@@ -9,7 +9,6 @@ const SIdeBarDropown = ({ path, subPath, subText1, div1} : any) => {
     const isLinkActive =
     router === `/dashboard${subPath ? "/" + subPath : ""}`;
     const onActived = isLinkActive ? "onActive" : "";
-console.log(router);
 
   return (
         <ul className={styles["ul"]}>
