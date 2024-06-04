@@ -175,7 +175,7 @@ const ManageProperty = () => {
             />
           </div>
          </div>
-         <WarningComponent show={toggle} onClick={popWarning} onClack={popOut}  />
+         <WarningComponent show={toggle} data={toggle} onClick={popWarning} onClack={popOut}  />
          <ConfirmComponent show={toggle2} onClick={popOut2} />
     </div>
   )
