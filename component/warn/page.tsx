@@ -7,8 +7,11 @@ const WarnComponent = ({onClick, onClack, text, title, warn, disable} : any) => 
     
     const unShow = disable ? warn : "none";
 
+    console.log(warn);
+    
+
   return (
-    <div className={`${styles["white-bg"]} ${styles[unShow]}`}>
+    <div className={styles[unShow]}>
             <Icon icon="warning" width={40} height={40} />
             <p>{title}</p>
             <small>{text}</small>
