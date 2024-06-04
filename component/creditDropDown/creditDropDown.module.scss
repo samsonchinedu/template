@@ -6,13 +6,12 @@
     position: absolute;
     background: #fff;
 
-    display: none;
-
     &-credit {
         gap: 10px;
         height: 38px;
         display: flex;
         align-items: center;
+        cursor: default;
         padding: 6px 20px 6px 12px;
         justify-content: flex-start;
 
@@ -44,4 +43,8 @@
             color: #1a1a1a;
         }
     }
+}
+
+.none{
+    display: none;
 }

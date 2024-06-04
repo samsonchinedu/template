@@ -11,46 +11,6 @@
     align-items: center;
     background: #07080873;
     justify-content: center;
-
-    &-white-bg{
-        gap: 10px;
-        display: flex;
-        background: #fff;
-        align-items: center;
-        border-radius: 6px;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1.4rem 2rem 1rem 2rem;
-
-        p{
-            width: 266px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #2e3031;
-            text-align: center;
-            line-height: 26.4px;
-        }
-        
-        small{
-            font-size: 14px;
-            font-weight: 400;
-            color: #6f7376;
-            text-align: center;
-            line-height: 22.4px;
-        }
-
-        &-btn-option{
-            gap: 20px;
-            width: 298px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            div{
-                width: 100%;
-            }
-        }
-    }
 }
 
 .d-none{

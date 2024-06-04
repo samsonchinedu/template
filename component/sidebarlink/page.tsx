@@ -15,7 +15,7 @@ interface SidebarLinkProps {
   text: string;
 }
 
-const SideBarLink = ({path, text, icon, isActive } : any) => {
+const SideBarLink = ({path, text, icon, isActive, subPath } : any) => {
   const [toggle, setToggle] = useState(false);
  const show = isActive ? !toggle : toggle;
   const changeView = () => {
@@ -27,9 +27,10 @@ const SideBarLink = ({path, text, icon, isActive } : any) => {
     const router = usePathname();
 
     const isLinkActive =
-    router === `/dashboard${path ? "/" + path : ""}`;
+    router === `/dashboard${path ? "/" + path  : ""}`;
 
-      const isActived = isLinkActive ? "active" : "";
+      const isActived = isLinkActive ? "active" : "acts";
+      
 
   return (
     <>

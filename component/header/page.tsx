@@ -4,8 +4,6 @@ import Icon from '../Icon/page'
 import { icons } from '@/utils/icon'
 
 const Header = ({ text, small, btnText, icon, active, onClack, right } : any) => {
-
-  console.log(onClack);
   
 
   return (
